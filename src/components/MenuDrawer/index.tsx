@@ -25,24 +25,18 @@ import styles from "./styles.module.scss";
 
 //=============================================================================
 import * as Icon from "@material-ui/icons";
-import { FcOnlineSupport } from "react-icons/fc";
 //=============================================================================
 
 interface IListItemLinkProps {
   label: string;
   icon: IconBaseProps;
   route: string;
-  //onClick: (() => void) | undefined;
 }
 const ListItemLink: React.FC<IListItemLinkProps> = ({ label, icon, route }) => {
   const theme = useTheme();
 
-  const handleClick = () => {
-    //console.log('Aqui')
-  };
-
-  return (
-    <ListItemButton onClick={handleClick}>
+    return (
+    <ListItemButton >
       <ListItemIcon>
         <Box
           sx={{ width: theme.spacing(6) }} // distancia do icone com o titulo
@@ -69,11 +63,8 @@ const ListItemLink: React.FC<IListItemLinkProps> = ({ label, icon, route }) => {
 //=============================================================================
 
 import Image from "next/image";
-import { MdClose } from "react-icons/md";
-
 import { RiShutDownLine } from "react-icons/ri";
-
-import logo from "../../../public/Khipo.jpg";
+import logo from "../../../public/khipo.png";
 import {dataHoraZone} from "../../utils/util";
 
 type TitleBarProps = {

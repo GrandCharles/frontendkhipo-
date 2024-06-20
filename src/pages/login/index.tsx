@@ -9,7 +9,7 @@ import { Input } from "../../components/ui/Input";
 import { Button } from "../../components/ui/Button";
 import { AuthContext } from "../../contexts/AuthContext";
 import { canSSRGuest } from "../../utils/canSSRGuest";
-
+import logo from "../../../public/logoKhipo.png";
 import { Container, ContainerLogo, ContainerLogin, Text } from "./styles";
 
 export default function Login() {
@@ -40,7 +40,7 @@ export default function Login() {
 
       <Container>
         <ContainerLogo>
-          <img src="logoKhipo.jpg" />
+          <Image alt="" src={logo} width={1300} height={910} />
         </ContainerLogo>
 
         <ContainerLogin>

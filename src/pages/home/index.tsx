@@ -10,7 +10,6 @@ import { toast } from "react-toastify";
 import { IoHome } from "react-icons/io5";
 import { GiStarFlag } from "react-icons/gi";
 
-import { Input } from "../../components/ui/Input";
 import MenuDrawer from "../../components/MenuDrawer";
 
 import { Form, ContainerHome, GridContainer } from "./styles";
@@ -18,7 +17,6 @@ import {
   DivCol,
   DivRow,
   AreaComp,
-  Divider,
 } from "../../components/Global/styles";
 
 import { PageContainer } from "../../components/PageContainer";
