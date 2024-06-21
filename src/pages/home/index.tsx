@@ -12,7 +12,7 @@ import { GiStarFlag } from "react-icons/gi";
 
 import MenuDrawer from "../../components/MenuDrawer";
 
-import { Form, ContainerHome, GridContainer } from "../../style/home/styles";
+import { Form, ContainerHome, GridContainer } from "../../../styles/home/styles";
 import { DivCol, DivRow, AreaComp } from "../../components/Global/styles";
 
 import { PageContainer } from "../../components/PageContainer";

@@ -10,7 +10,7 @@ import { Button } from "../../components/ui/Button";
 import { AuthContext } from "../../contexts/AuthContext";
 import { canSSRGuest } from "../../utils/canSSRGuest";
 import logo from "../../../public/logoKhipo.png";
-import { Container, ContainerLogo, ContainerLogin, Text } from "../../style/login/styles";
+import { Container, ContainerLogo, ContainerLogin, Text } from "../../../styles/login/styles";
 
 export default function Login() {
   const { signIn } = useContext(AuthContext);

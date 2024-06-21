@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { device } from '../../../styles/mediaQuery';
+import { device } from '../../styles/mediaQuery';
 
 export const Container = styled.div`
   width: 99.9%;
