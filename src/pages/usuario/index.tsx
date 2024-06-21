@@ -64,7 +64,6 @@ export default function Usuario() {
 
         <PageContainer
           titulo="Adicionar novo usuário"
-          sair={true}
           wd="25%"
           hg="5vh"
         >
