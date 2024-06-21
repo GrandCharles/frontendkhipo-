@@ -14,8 +14,8 @@ import { Container, ContainerLogo, ContainerLogin, Text } from "../../../styles/
 
 export default function Login() {
   const { signIn } = useContext(AuthContext);
-  const [email, setEmail] = useState("usuario@gmail.com");
-  const [senha, setSenha] = useState("123");
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
   const [loading, setLoading] = useState(false);
 
   async function logar(event: FormEvent) {
