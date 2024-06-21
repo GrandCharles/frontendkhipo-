@@ -123,7 +123,7 @@ export default function Home() {
         hg="15vh"
         wdt="160vh"
         hgt="16vh"
-        bc="#800000"
+        bc="#191e28"
       >
         <Form>
           <DivRow>

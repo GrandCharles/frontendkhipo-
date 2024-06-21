@@ -16,7 +16,7 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 
-const drawerWidth = 220;
+const drawerWidth = 250; // Largura do menu expandido
 
 //=============================================================================
 import { IconBaseProps } from "react-icons";
@@ -121,7 +121,7 @@ const closedMixin = (theme: Theme): CSSObject => ({
   overflowX: "hidden",
   width: `calc(${theme.spacing(7)} + 1px)`,
   [theme.breakpoints.up("sm")]: {
-    width: `calc(${theme.spacing(8)} + 1px)`, // Largura da coluna do menu recolhido
+    width: `calc(${theme.spacing(0)})`, // Largura da coluna do menu recolhido
   },
 });
 
