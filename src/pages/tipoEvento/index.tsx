@@ -210,9 +210,10 @@ export default function TipoEvento() {
       <PageContainer
         titulo="Tipos de Eventos"
         titulo2="*Campos obrigatórios"
-        sair={false}
-        wd="50%"
+        wd="60%"
         hg="10vh"
+        wdt="60%"
+        hgt="12vh"
       >
         <Form>
           <DivRow>

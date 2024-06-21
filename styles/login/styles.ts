@@ -9,26 +9,20 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  background-color: #FFF5EE;
+  //background-color: #FFF5EE;
+  background-color: yellow;
+  background-color: #000000;
 `;
 
 export const ContainerLogo = styled.div`
-  width: 75%;
-  height: 99.9%;
-  overflow: hidden; 
-  
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  width: auto;
+  margin-left: 1px;
+
 `;
 
 export const ContainerLogin = styled.div`
   width: 30%;
   height: auto;
-  margin-left: .1rem;
-  margin-right: .1rem;
 
   display: flex;
   flex-direction: column;
@@ -39,8 +33,6 @@ export const ContainerLogin = styled.div`
     background: transparent;
     border: 0;
   }
-
-  background-color: #F0FFF0;
 `;
 
 export const Text = styled.a`

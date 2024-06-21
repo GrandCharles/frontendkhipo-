@@ -53,7 +53,6 @@ export const AreaComp = styled.div<AreaCompProps>`
   margin-left: ${(props) => (props.ml ? props.ml : "10px")};
   margin-top: ${(props) => (props.mgTop ? props.mgTop : "0px")};
   padding: 5px;
-  padding-right: 20px;
 
   display: flex;
   flex-direction: ${(props) => (props.flexDirect ? props.flexDirect : "column")};

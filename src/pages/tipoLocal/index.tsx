@@ -211,9 +211,10 @@ export default function TipoLocal() {
       <PageContainer
         titulo="Tipos de Locais"
         titulo2="*Campos obrigatórios"
-        sair={false}
-        wd="50%"
+        wd="60%"
         hg="10vh"
+        wdt="60%"
+        hgt="12vh"
       >
         <Form>
           <DivRow>

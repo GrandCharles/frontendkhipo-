@@ -16,6 +16,7 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 
+
 const drawerWidth = 220;
 
 //=============================================================================
@@ -87,7 +88,7 @@ function TitleBar({ user, titulo }: TitleBarProps) {
 
         <div className={styles.userIn}>
           <h1>Olá, {user}</h1>
-          {/*<h1>{now}</h1>*/}
+          <h1>{now}</h1>
         </div>
 
         <div className={styles.botao}>
@@ -227,7 +228,7 @@ export default function MenuDrawer({ titulo}: TitleBarProps) {
 
         <List component="nav">
           <ListItemLink
-            icon={<Icon.Category color="primary" />}
+            icon={<Icon.Stars color="primary" />}
             label="Tipos de Eventos"
             route="/tipoEvento"
           />
@@ -237,9 +238,14 @@ export default function MenuDrawer({ titulo}: TitleBarProps) {
             route="/tipoLocal"
           />
           <ListItemLink
-            icon={<Icon.Restaurant color="primary" />}
+            icon={<Icon.Home color="primary" />}
             label="Locais"
             route="/local"
+          />
+          <ListItemLink
+            icon={<Icon.EventSeat color="primary" />}
+            label="Eventos"
+            route="/Evento"
           />
 
           <Divider />

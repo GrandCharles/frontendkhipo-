@@ -393,13 +393,14 @@ export default function Local() {
       <PageContainer
         titulo={`Locais - ${contextoTela}`}
         titulo2="*Campos obrigatórios"
-        sair={false}
-        wd="50%"
+        wd="55%"
         hg="10vh"
+        wdt="55%"
+        hgt="12vh"
       >
         <Form>
           <DivRow>
-            <DivCol wd="50%">
+            <DivCol wd="55%">
               <AreaComp>
                 <h1>Informações básicas</h1>
               </AreaComp>
@@ -438,7 +439,7 @@ export default function Local() {
               </AreaComp>
             </DivCol>
 
-            <DivCol wd="50%">
+            <DivCol wd="45%">
               <AreaComp
                 wd="45vh"
                 hg="35%"
@@ -478,7 +479,7 @@ export default function Local() {
           <Divider />
 
           <DivRow>
-            <DivCol wd="50%">
+            <DivCol wd="55%">
               <AreaComp>
                 <h1>Localização</h1>
               </AreaComp>
@@ -498,7 +499,7 @@ export default function Local() {
               </AreaComp>
             </DivCol>
 
-            <DivCol wd="50%">
+            <DivCol wd="45%">
               <AreaComp
                 wd="43vh"
                 hg="8vh"
@@ -526,7 +527,7 @@ export default function Local() {
           </DivRow>
 
           <DivRow>
-            <DivCol wd="50%">
+            <DivCol wd="55%">
               <AreaComp wd="45vh" hg="35%" inputSize="40vh">
                 <label>CEP*</label>
                 <Input
@@ -542,7 +543,7 @@ export default function Local() {
               </AreaComp>
             </DivCol>
 
-            <DivCol wd="50%">
+            <DivCol wd="45%">
               <AreaComp wd="45vh" hg="35%" inputSize="40vh" ml="30px">
                 <label>Endereço*</label>
                 <Input
@@ -560,7 +561,7 @@ export default function Local() {
           </DivRow>
 
           <DivRow>
-            <DivCol wd="50%">
+            <DivCol wd="55%">
               <AreaComp wd="45vh" hg="35%" inputSize="40vh">
                 <label>Complemento</label>
                 <Input
@@ -580,7 +581,7 @@ export default function Local() {
           <Divider />
 
           <DivRow>
-            <DivCol wd="50%">
+            <DivCol wd="55%">
               <AreaComp>
                 <h1>Contato</h1>
               </AreaComp>
@@ -618,7 +619,7 @@ export default function Local() {
           <Divider />
 
           <DivRow>
-            <DivCol wd="50%">
+            <DivCol wd="55%">
               <AreaComp>
                 <h1>Cadastro de entradas e catracas</h1>
               </AreaComp>
@@ -638,7 +639,7 @@ export default function Local() {
               </AreaComp>
             </DivCol>
 
-            <DivCol wd="50%">
+            <DivCol wd="45%">
               <AreaComp
                 wd="45vh"
                 hg="8vh"

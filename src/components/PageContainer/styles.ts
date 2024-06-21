@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+interface IContainerProps {
+  bc?: string;
+ }
+
+export const Container = styled.div<IContainerProps>`
   width: auto;
   min-height: 88vh;
 
@@ -10,7 +14,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  background-color: #191e28;
+  background-color: ${(props) => (props.bc ? props.bc : "#191e28")};
 `;
 
 interface IFormContainerProps {
@@ -19,7 +23,6 @@ interface IFormContainerProps {
 }
 export const FormContainer = styled.div<IFormContainerProps>`
   width: ${(props) => (props.wd ? props.wd : "auto")};
-
   border-radius: 20px;
   
   display: flex;
@@ -28,29 +31,30 @@ export const FormContainer = styled.div<IFormContainerProps>`
   align-content: flex-start;
   flex-wrap: wrap;
 
-  background-color: #000000;
+  //background-color: #000000;
+  background-color: yellow;
 `;
 
 interface ITitleBarProps {
-  wd?: string;
-  hg?: string;
+  wdt?: string;
+  hgt?: string;
 }
 export const TitleBar = styled.div<ITitleBarProps>`
-  width: ${(props) => (props.wd ? props.wd : "auto")};
-  height: ${(props) => (props.hg ? props.hg : "10vh")};
-  margin-top: 10px;
+  width: ${(props) => (props.wdt ? props.wdt : "10vh")};
+  height: ${(props) => (props.hgt ? props.hgt : "10vh")};
 
-  background-color: #191e28;
-  //background-color: Green;
+  //background-color: #191e28;
+  background-color: Green;
 
   h1 {
-    margin-left: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
     font-size: 28px;
     font-weight: 700;
     color: #fff;
   }
   h2 {
-    margin-left: 30px;
+    margin-left: 10px;
     font-size: 15px;
     font-weight: normal;
     color: #fff;

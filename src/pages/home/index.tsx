@@ -119,14 +119,17 @@ export default function Home() {
       <PageContainer
         titulo="Olá Mariana"
         titulo2="Confira todos os seus eventos e locais em só lugar"
-        sair={true}
-        wd="80%"
+        wd="auto"
         hg="15vh"
+        wdt="160vh"
+        hgt="16vh"
+        bc="#800000"
       >
         <Form>
           <DivRow>
             <DivCol wd="50%">
-              <ContainerHome wd="85vh" hg="15vh" bc="#808000">
+
+              <ContainerHome wd="75vh" hg="15vh" bc="#808000">
                 <DivCol wd="60%">
                   <AreaComp mgTop="25px">
                     <h3>
@@ -157,7 +160,7 @@ export default function Home() {
             </DivCol>
 
             <DivCol wd="50%">
-              <ContainerHome wd="85vh" hg="15vh" bc="#CD5C5C">
+              <ContainerHome wd="75vh" hg="15vh" bc="#CD5C5C">
                 <DivCol wd="60%">
                   <AreaComp mgTop="25px">
                     <h3>
@@ -173,10 +176,10 @@ export default function Home() {
                     <Link href="/home" passHref>
                       <Button
                         loading={loading}
-                        wd="80%"
+                        wd="85%"
                         hg="42px"
                         bg="#f0ffff"
-                        ml="12px"
+                        ml="10px"
                       >
                         Conferir eventos
                       </Button>
@@ -189,7 +192,7 @@ export default function Home() {
 
           <DivRow>
             <DivCol wd="50%">
-              <ContainerHome wd="85vh" hg="35vh" bc="#191e28">
+              <ContainerHome wd="75vh" hg="35vh" bc="#191e28">
                 <AreaComp hg="5vh" justCont="space-between" flexDirect="row">
                   <label>Ultimos Locais adicionados</label>
                   <label>Ver todos</label>
@@ -214,7 +217,7 @@ export default function Home() {
             </DivCol>
 
             <DivCol wd="50%">
-              <ContainerHome wd="85vh" hg="35vh" bc="#191e28">
+              <ContainerHome wd="75vh" hg="35vh" bc="#191e28">
                 <AreaComp hg="5vh" justCont="space-between" flexDirect="row">
                   <label>Ultimos Eventos adicionados</label>
                   <label>Ver todos</label>

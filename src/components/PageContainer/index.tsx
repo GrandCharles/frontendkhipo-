@@ -1,31 +1,33 @@
-import { ReactNode, ButtonHTMLAttributes, useRef, useState } from "react";
-import { ImExit } from "react-icons/im";
-import Link from "next/link";
+import { ReactNode} from "react";
 import { Container, TitleBar, FormContainer } from "./styles";
 
 type PageContainerProps = {
   titulo?: string;
   titulo2?: string;
-  sair: boolean;
   wd?: string;
   hg?: string;
+  wdt?: string;
+  hgt?: string;
   ml?: string;
+  bc?: string;
   children: ReactNode;
 };
 
 export function PageContainer({
   titulo,
   titulo2,
-  sair,
   wd,
   hg,
+  wdt,
+  hgt,
+  bc,
   children,
 }: PageContainerProps) {
   return (
     <>
-      <Container>
+      <Container bc={bc}>
 
-        <TitleBar wd={wd} hg={hg}>
+        <TitleBar wdt={wdt} hgt={hgt}>
           <h1>{titulo}</h1>
           <h2>{titulo2}</h2>
         </TitleBar>

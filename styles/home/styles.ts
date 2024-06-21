@@ -14,16 +14,20 @@ export const ContainerHome = styled.div<IContainerHomeProps>`
   height: ${(props) => (props.hg ? props.hg : "10vh")};
   background-color:  ${(props) => (props.bc ? props.bc : "#fff")};
 
-  margin-bottom: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
-  border-radius: 12px;
+  border-radius: 10px;
+
   display: flex;
   flex-flow: column wrap;
 
   label {
-    margin-top: 10px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: normal;
+    margin-top: 5px;
     margin-right: 10px;
     margin-left: 1px;
     color: #fff;

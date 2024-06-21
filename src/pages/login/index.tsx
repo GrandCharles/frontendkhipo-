@@ -1,4 +1,4 @@
-import { useContext, FormEvent, useState, useRef } from "react";
+import { useContext, FormEvent, useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,8 +14,8 @@ import { Container, ContainerLogo, ContainerLogin, Text } from "../../../styles/
 
 export default function Login() {
   const { signIn } = useContext(AuthContext);
-  const [email, setEmail] = useState("");
-  const [senha, setSenha] = useState("");
+  const [email, setEmail] = useState("usuario@gmail.com");
+  const [senha, setSenha] = useState("123");
   const [loading, setLoading] = useState(false);
 
   async function logar(event: FormEvent) {
@@ -31,7 +31,11 @@ export default function Login() {
     await signIn({ email, senha });
     setLoading(false);
   }
+  
+  useEffect(()=>{
 
+  },[])
+  
   return (
     <>
       <Head>
@@ -40,12 +44,12 @@ export default function Login() {
 
       <Container>
         <ContainerLogo>
-          <Image alt="" src={logo} width={1300} height={910} />
+          <Image alt="" src={logo} width={1000} height={660} />
         </ContainerLogo>
 
         <ContainerLogin>
           <form onSubmit={logar}>
-            <AreaComp inputSize="16vw">
+            <AreaComp inputSize="18vw">
               <label>Email:</label>
               <Input
                 placeholder="Digite seu Email"
@@ -58,7 +62,7 @@ export default function Login() {
               />
             </AreaComp>
 
-            <AreaComp inputSize="16vw">
+            <AreaComp inputSize="18vw">
               <label>Senha:</label>
               <Input
                 placeholder="Digite sua Senha"
@@ -76,10 +80,10 @@ export default function Login() {
               <Button
                 type="submit"
                 loading={loading}
-                wd="100%"
+                wd="99%"
                 hg="35px"
                 bg="#00ff7f"
-                ml="12px"
+                ml="6px"
               >
                 Acessar
               </Button>
@@ -97,9 +101,10 @@ export default function Login() {
     </>
   );
 }
-
+/*
 export const getServerSideProps = canSSRGuest(async (ctx) => {
   return {
     props: {},
   };
 });
+*/
