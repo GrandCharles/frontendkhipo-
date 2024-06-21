@@ -1,13 +1,13 @@
+import React from "react";
 import styled from "styled-components";
 
-export interface IButtonProps {
+interface IButtonProps {
   wd?: string;
   hg?: string;
   bg?: string;
   ml?: string;
   cl?: string;
 }
-
 export const ButtonContainer = styled.div<IButtonProps>`
   width: ${(props) => (props.wd ? props.wd : "auto")};
   height: ${(props) => (props.hg ? props.hg : "10px")};

@@ -1,54 +1,8 @@
-import styled, { createGlobalStyle, css, keyframes } from "styled-components";
+import styled from "styled-components";
 import PerfectScrollbar from 'react-perfect-scrollbar';
 
-export default createGlobalStyle`
-  .grid-button {
-    background-color: transparent;
-    border: none;
-    outline: 0;
-    padding: 0;
-    margin-right: 14px;
-  }
 
-  .grid-button:last-child {
-    margin-right: 0;
-  }
-
-  .grid-button i {
-    color: #61098a;
-  }
-
-  .grid-red-row {
-    background-color: #e42a3c !important;
-  }
-
-  .ag-theme-balham .grid-red-row.ag-row-selected {
-    background-color: #e42a3c !important;
-  }
-
-  .ag-theme-balham {
-    font-family: 'Roboto',sans-serif !important;
-  }
-
-  .ag-theme-balham .ag-row-selected {
-    /* background-color: rgba(100,12,141,0.6) !important; */
-    background-color: rgb(141 68 175 / 60%) !important;
-  }
-
-  .ag-theme-balham  .ag-row-selected .ag-cell {
-    color: #fff;
-  }
-
-  .ag-theme-balham  .ag-row-selected .ag-cell .ag-cell-editor {
-    color: #000;
-  }
-
-  .ag-theme-balham .ag-select .ag-picker-field-wrapper {
-    color: #000;
-  }
-`;
-
-export interface DivRowProps {
+interface DivRowProps {
   wd?: string | any;
   hg?: string;
   pd?: string;
@@ -64,7 +18,7 @@ export const DivRow = styled.div<DivRowProps>`
   align-items: flex-start;
 `;
 
-export interface DivColProps {
+interface DivColProps {
   wd?: string;
   hg?: string;
   align?: string;
@@ -75,11 +29,10 @@ export interface DivColProps {
 }
 export const DivCol = styled.div<DivColProps>`
   width: ${(props) => (props.wd ? props.wd : "100%")};
-  //height: ${(props) => (props.hg ? props.hg : "auto")};
   padding: ${(props) => (props.pd ? props.pd : "auto")};
 `;
 
-export interface AreaCompProps {
+interface AreaCompProps {
   wd?: string;
   hg?: string;
   ml?: string;
@@ -181,38 +134,5 @@ export const Divider = styled.div`
   padding: 1px;
 
   background: #383c4c;
-`;
-
-export const Scroll = styled(PerfectScrollbar)`
-  width: 100%;
-  padding-bottom: 15px;
-  padding-right: 8px;
-  overflow: -moz-scrollbars-vertical;
-
-  ::-webkit-scrollbar-thumb {
-    background: rgba(98, 9, 139, 0.5) !important;
-  }
-
-  ::-webkit-scrollbar {
-    background: transparent;
-  }
-
-  .ps__thumb-y {
-    background-color: rgba(98, 9, 139, 0.5) !important;
-  }
-
-  .ps__rail-y {
-    display: block !important;
-    opacity: 1 !important;
-  }
-
-  .ps__rail-x {
-    display: block !important;
-    opacity: 1 !important;
-  }
-
-  .ps__thumb-x {
-    background-color: rgba(98, 9, 139, 0.5) !important;
-  }
 `;
 

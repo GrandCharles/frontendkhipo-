@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import { device } from '../../../styles/mediaQuery';
 
 export const Container = styled.div`
@@ -12,7 +12,6 @@ export const Container = styled.div`
   background-color: #FFF5EE;
 `;
 
-
 export const ContainerLogo = styled.div`
   width: 75%;
   height: 99.9%;
@@ -24,7 +23,6 @@ export const ContainerLogo = styled.div`
     object-fit: cover;
   }
 `;
-
 
 export const ContainerLogin = styled.div`
   width: 30%;

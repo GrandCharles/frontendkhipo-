@@ -125,7 +125,7 @@ export default function Usuario() {
           <Divider />
 
           <AreaComp justCont="flex-end" flexDirect="row">
-            <Link href="/">
+            <Link href="/" passHref>
               <Button
                 loading={loading}
                 wd="35%"
@@ -147,6 +147,7 @@ export default function Usuario() {
             >
               Cadastrar
             </Button>
+            
           </AreaComp>
         </PageContainer>
       </>

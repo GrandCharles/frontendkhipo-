@@ -13,7 +13,7 @@ export const Container = styled.div`
   background-color: #191e28;
 `;
 
-export interface IFormContainerProps {
+interface IFormContainerProps {
   wd?: string;
   hg?: string;
 }
@@ -31,7 +31,7 @@ export const FormContainer = styled.div<IFormContainerProps>`
   background-color: #000000;
 `;
 
-export interface ITitleBarProps {
+interface ITitleBarProps {
   wd?: string;
   hg?: string;
 }

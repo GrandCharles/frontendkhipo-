@@ -72,6 +72,7 @@ export default function Login() {
             </AreaComp>
 
             <AreaComp algItem="center" >
+
               <Button
                 type="submit"
                 loading={loading}
@@ -82,9 +83,10 @@ export default function Login() {
               >
                 Acessar
               </Button>
+              
             </AreaComp>
           </form>
-          <Link href="/usuario">
+          <Link href="/usuario" passHref>
             <Text>
               Não possui uma conta? Cadastra-se
              </Text>

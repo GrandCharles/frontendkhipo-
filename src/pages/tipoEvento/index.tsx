@@ -260,7 +260,7 @@ export default function TipoEvento() {
         <Divider />
 
         <AreaComp justCont="flex-end" flexDirect="row">
-          <Link href="/home">
+          <Link href="/home" passHref>
             <Button
               loading={loading}
               wd="25%"

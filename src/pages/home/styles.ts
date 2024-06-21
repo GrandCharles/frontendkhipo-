@@ -2,15 +2,13 @@ import styled from 'styled-components';
 
 export const Form = styled.div`
   width: 99%;
-  
-`;
+ `;
 
-export interface IContainerHomeProps {
+interface IContainerHomeProps {
   wd?: string;
   hg?: string;
   bc?: string;
-  
-}
+ }
 export const ContainerHome = styled.div<IContainerHomeProps>`
   width: ${(props) => (props.wd ? props.wd : "40vh")};
   height: ${(props) => (props.hg ? props.hg : "10vh")};

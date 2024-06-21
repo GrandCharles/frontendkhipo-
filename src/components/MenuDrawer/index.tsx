@@ -52,7 +52,7 @@ const ListItemLink: React.FC<IListItemLinkProps> = ({ label, icon, route }) => {
           alignItems="center"
           justifyContent="flex-start"
         >
-          <Link href={route}>
+          <Link href={route} passHref>
             <b>{label}</b>
           </Link>
         </Box>

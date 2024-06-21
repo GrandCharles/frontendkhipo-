@@ -1,4 +1,4 @@
-import { FormEvent, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 import { AgGridReact } from "ag-grid-react";
@@ -13,11 +13,7 @@ import { GiStarFlag } from "react-icons/gi";
 import MenuDrawer from "../../components/MenuDrawer";
 
 import { Form, ContainerHome, GridContainer } from "./styles";
-import {
-  DivCol,
-  DivRow,
-  AreaComp,
-} from "../../components/Global/styles";
+import { DivCol, DivRow, AreaComp } from "../../components/Global/styles";
 
 import { PageContainer } from "../../components/PageContainer";
 import { Button } from "../../components/ui/Button";
@@ -120,7 +116,13 @@ export default function Home() {
 
       <MenuDrawer titulo={"Home"} />
 
-      <PageContainer titulo="Olá Mariana" titulo2="Confira todos os seus eventos e locais em só lugar"sair={true} wd="80%" hg="15vh">
+      <PageContainer
+        titulo="Olá Mariana"
+        titulo2="Confira todos os seus eventos e locais em só lugar"
+        sair={true}
+        wd="80%"
+        hg="15vh"
+      >
         <Form>
           <DivRow>
             <DivCol wd="50%">
@@ -138,7 +140,7 @@ export default function Home() {
 
                 <DivCol wd="40%">
                   <AreaComp justCont="flex-end" flexDirect="row" mgTop="25px">
-                    <Link href="/local">
+                    <Link href="/local" passHref>
                       <Button
                         loading={loading}
                         wd="80%"
@@ -168,7 +170,7 @@ export default function Home() {
 
                 <DivCol wd="40%">
                   <AreaComp justCont="flex-end" flexDirect="row" mgTop="25px">
-                    <Link href="/home">
+                    <Link href="/home" passHref>
                       <Button
                         loading={loading}
                         wd="80%"

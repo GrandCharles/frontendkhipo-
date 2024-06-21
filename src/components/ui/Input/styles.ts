@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export interface IInputContainerProps {
+interface IInputContainerProps {
   wd?: string;
   hg?: string;
   bd?: string;
