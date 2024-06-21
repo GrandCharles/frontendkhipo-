@@ -12,7 +12,7 @@ import { MdEdit, MdDelete } from "react-icons/md";
 import { Input } from "../../components/ui/Input";
 import MenuDrawer from "../../components/MenuDrawer";
 
-import { Form, GridContainer, ButtonGrid } from "./styles";
+import { Form, GridContainer, ButtonGrid } from "../../style/local/styles";
 import {
   DivRow,
   DivCol,

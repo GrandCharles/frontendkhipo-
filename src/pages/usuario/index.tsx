@@ -2,7 +2,7 @@ import { useContext, FormEvent, useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { toast } from "react-toastify";
-import { Form } from "./styles";
+import { Form } from "../../style/usuario/styles";
 import { Input } from "../../components/ui/Input";
 import {
   DivCol,
