@@ -31,8 +31,8 @@ export const FormContainer = styled.div<IFormContainerProps>`
   align-content: flex-start;
   flex-wrap: wrap;
 
-  //background-color: #000000;
-  background-color: yellow;
+  background-color: #000000;
+  //background-color: yellow;
 `;
 
 interface ITitleBarProps {
@@ -43,8 +43,8 @@ export const TitleBar = styled.div<ITitleBarProps>`
   width: ${(props) => (props.wdt ? props.wdt : "10vh")};
   height: ${(props) => (props.hgt ? props.hgt : "10vh")};
 
-  //background-color: #191e28;
-  background-color: Green;
+  background-color: #191e28;
+  //background-color: Green;
 
   h1 {
     margin-top: 10px;

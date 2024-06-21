@@ -16,7 +16,6 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 
-
 const drawerWidth = 220;
 
 //=============================================================================
@@ -192,10 +191,10 @@ export default function MenuDrawer({ titulo}: TitleBarProps) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open}>
+      <AppBar position="fixed" open={open} >
         <Toolbar>
           <IconButton
-            color="inherit"
+            color="inherit"              // listas do menu
             aria-label="open drawer"
             onClick={handleDrawerOpen}
             edge="start"

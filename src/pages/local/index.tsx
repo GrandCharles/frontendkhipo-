@@ -393,9 +393,9 @@ export default function Local() {
       <PageContainer
         titulo={`Locais - ${contextoTela}`}
         titulo2="*Campos obrigatórios"
-        wd="55%"
+        wd="65%"
         hg="10vh"
-        wdt="55%"
+        wdt="65%"
         hgt="12vh"
       >
         <Form>
