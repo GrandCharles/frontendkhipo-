@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Login from "../pages/login/index";
 
 export default function Index() {
@@ -7,5 +6,4 @@ export default function Index() {
       <Login />
     </>
   );
-  
 }
