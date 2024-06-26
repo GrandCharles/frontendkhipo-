@@ -6,7 +6,7 @@ interface IContainerProps {
 
 export const Container = styled.div<IContainerProps>`
   width: auto;
-  min-height: 88vh;
+  min-height: 100vh;
 
   margin: 0 auto;
   display: flex;

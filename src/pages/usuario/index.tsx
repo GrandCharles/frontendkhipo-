@@ -64,10 +64,10 @@ export default function Usuario() {
       <PageContainer
         titulo="Adicionar novo usuário"
         titulo2="*Campos obrigatórios"
-        wd="25%"
+        wd="26%"
         hg="5vh"
-        wdt="25%"
-        hgt="12vh"
+        wdt="27%"
+        hgt="13vh"
       >
         <Form onSubmit={handleSalvar}>
           <DivRow>

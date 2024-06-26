@@ -21,7 +21,7 @@ export function PageContainer({
   wdt,
   hgt,
   bc,
-  children,
+  children,  
 }: PageContainerProps) {
   return (
     <>
