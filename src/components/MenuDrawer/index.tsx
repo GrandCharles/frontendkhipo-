@@ -16,12 +16,6 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 
-<<<<<<< HEAD
-const drawerWidth = 210; // Largura do menu expandido
-
-//=============================================================================
-=======
->>>>>>> a606bc62f67457a15f6bdca64d2297445f953ae8
 import { IconBaseProps } from "react-icons";
 import Link from "next/link";
 import styles from "./styles.module.scss";
