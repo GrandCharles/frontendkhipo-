@@ -172,8 +172,9 @@ export default function Dash() {
                 </DivCol>
 
                 <DivCol wd="40%">
+                  
                   <AreaComp justCont="flex-end" flexDirect="row" mgTop="25px">
-                    <Link href="/home" passHref>
+                    <Link href="/Evento" passHref>
                       <Button
                         loading={loading}
                         wd="85%"
