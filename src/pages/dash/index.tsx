@@ -12,7 +12,7 @@ import { GiStarFlag } from "react-icons/gi";
 
 import MenuDrawer from "../../components/MenuDrawer";
 
-import { Form, ContainerHome, GridContainer } from "../../../styles/home/styles";
+import { Form, ContainerHome, GridContainer } from "../../../styles/dash/styles";
 import { DivCol, DivRow, AreaComp } from "../../components/Global/styles";
 
 import { PageContainer } from "../../components/PageContainer";
@@ -21,7 +21,7 @@ import { Button } from "../../components/ui/Button";
 import { setupAPIClient } from "../../services/api";
 import { canSSRAuth } from "../../utils/canSSRAuth";
 
-export default function Home() {
+export default function Dash() {
   const [loading, setLoading] = useState(false);
   const [listaLocal, setListaLocal] = useState([]);
   const [listaEvento, setListaEvento] = useState([]);
@@ -111,10 +111,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>dash</title>
       </Head>
 
-      <MenuDrawer titulo={"Home"} />
+      <MenuDrawer titulo={"Dash"} />
 
       <PageContainer
         titulo="Olá Mariana"

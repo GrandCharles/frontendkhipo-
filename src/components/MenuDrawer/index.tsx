@@ -16,7 +16,7 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 
-const drawerWidth = 250; // Largura do menu expandido
+const drawerWidth = 210; // Largura do menu expandido
 
 //=============================================================================
 import { IconBaseProps } from "react-icons";
@@ -250,7 +250,7 @@ export default function MenuDrawer({ titulo}: TitleBarProps) {
           <Divider />
 
           <ListItemLink
-            icon={<Icon.PersonAddDisabled color="primary" />}
+            icon={<Icon.PersonAddDisabled color="secondary" />}
             label="Sair"
             route="/"
           />
