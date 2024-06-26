@@ -12,7 +12,7 @@ import { canSSRGuest } from "../utils/canSSRGuest";
 import logo from "../../public/logoKhipo.png";
 import { Container, ContainerLogo, ContainerLogin, Text } from "../../styles/login/styles";
 
-export default function Home() {
+export default function Login() {
   const { signIn } = useContext(AuthContext);
   const [email, setEmail] = useState("usuario@gmail.com");
   const [senha, setSenha] = useState("123");
