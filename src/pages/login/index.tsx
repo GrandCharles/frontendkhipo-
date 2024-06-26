@@ -108,3 +108,70 @@ export const getServerSideProps = canSSRGuest(async (ctx) => {
   };
 });
 */
+
+
+/*
+    <>
+      <Head>
+        <title>Faça seu Login</title>
+      </Head>
+
+      <Container>
+        <ContainerLogo>
+          <Image alt="" src={logo} width={1000} height={660} />
+        </ContainerLogo>
+
+        <ContainerLogin>
+          <form onSubmit={logar}>
+            <AreaComp inputSize="18vw">
+              <label>Email:</label>
+              <Input
+                placeholder="Digite seu Email"
+                type="text"
+                icon={null}
+                maxLength={50}
+                hg="35px"
+                value={email}
+                onChange={(ev) => setEmail(ev.target.value)}
+              />
+            </AreaComp>
+
+            <AreaComp inputSize="18vw">
+              <label>Senha:</label>
+              <Input
+                placeholder="Digite sua Senha"
+                type="password"
+                icon={null}
+                maxLength={15}
+                hg="35px"
+                value={senha}
+                onChange={(ev) => setSenha(ev.target.value)}
+              ></Input>
+            </AreaComp>
+
+            <AreaComp algItem="center" >
+
+              <Button
+                type="submit"
+                loading={loading}
+                wd="99%"
+                hg="35px"
+                bg="#00ff7f"
+                ml="6px"
+              >
+                Acessar
+              </Button>
+              
+            </AreaComp>
+          </form>
+          <Link href="/usuario" passHref>
+            <Text>
+              Não possui uma conta? Cadastra-se
+             </Text>
+          </Link>
+
+        </ContainerLogin>
+      </Container>
+    </>
+  
+*/

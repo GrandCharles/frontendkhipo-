@@ -1,14 +1,10 @@
 import Head from "next/head";
 import Login from "../pages/login/index";
 
-export default function Home() {
+export default function Index() {
   return (
-    <div>
-      <Head>
-        <title>Khipo - GrandCharles</title>
-      </Head>
-
+    <>
       <Login />
-    </div>
+    </>
   );
 }
