@@ -57,100 +57,99 @@ export default function Usuario() {
 
   return (
     <>
-      <>
-        <Head>
-          <title>Cadastro de Usuários</title>
-        </Head>
+      <Head>
+        <title>Cadastro de Usuários</title>
+      </Head>
 
-        <PageContainer
-          titulo="Adicionar novo usuário"
-          wd="25%"
-          hg="5vh"
-        >
-          <Form onSubmit={handleSalvar}>
-            <DivRow>
-              <DivCol wd="100%">
-                <AreaComp hg="10vh" inputSize="35vh">
-                  <label>Nome*</label>
-                  <Input
-                    type="text"
-                    placeholder="Nome"
-                    value={nome}
-                    onChange={(ev) => setNome(ev.target.value)}
-                    icon={null}
-                    autoFocus={true}
-                    maxLength={30}
-                  />
-                </AreaComp>
+      <PageContainer
+        titulo="Adicionar novo usuário"
+        titulo2="*Campos obrigatórios"
+        wd="25%"
+        hg="5vh"
+        wdt="25%"
+        hgt="12vh"
+      >
+        <Form onSubmit={handleSalvar}>
+          <DivRow>
+            <DivCol wd="100%">
+              <AreaComp hg="10vh" inputSize="40vh">
+                <label>Nome*</label>
+                <Input
+                  type="text"
+                  placeholder="Nome"
+                  value={nome}
+                  onChange={(ev) => setNome(ev.target.value)}
+                  icon={null}
+                  autoFocus={true}
+                  maxLength={30}
+                />
+              </AreaComp>
 
-                <AreaComp hg="10vh" inputSize="35vh">
-                  <label>Email*</label>
-                  <Input
-                    type="text"
-                    placeholder="Email"
-                    value={email}
-                    onChange={(ev) => setEmail(ev.target.value)}
-                    icon={null}
-                    maxLength={40}
-                  />
-                </AreaComp>
+              <AreaComp hg="10vh" inputSize="40vh">
+                <label>Email*</label>
+                <Input
+                  type="text"
+                  placeholder="Email"
+                  value={email}
+                  onChange={(ev) => setEmail(ev.target.value)}
+                  icon={null}
+                  maxLength={40}
+                />
+              </AreaComp>
 
-                <AreaComp hg="10vh" inputSize="20vh">
-                  <label>Senha*</label>
-                  <Input
-                    type="password"
-                    placeholder="Digite sua Senha"
-                    maxLength={15}
-                    value={senha1}
-                    icon={null}
-                    onChange={(ev) => setSenha1(ev.target.value)}
-                  ></Input>
-                </AreaComp>
+              <AreaComp hg="10vh" inputSize="20vh">
+                <label>Senha*</label>
+                <Input
+                  type="password"
+                  placeholder="Digite sua Senha"
+                  maxLength={15}
+                  value={senha1}
+                  icon={null}
+                  onChange={(ev) => setSenha1(ev.target.value)}
+                ></Input>
+              </AreaComp>
 
-                <AreaComp hg="8vh" inputSize="20vh">
-                  <Input
-                    type="password"
-                    placeholder="Repita sua Senha"
-                    value={senha2}
-                    onChange={(ev) => setSenha2(ev.target.value)}
-                    icon={null}
-                    maxLength={15}
-                  ></Input>
-                </AreaComp>
-              </DivCol>
-            </DivRow>
-          </Form>
+              <AreaComp hg="8vh" inputSize="20vh">
+                <Input
+                  type="password"
+                  placeholder="Repita sua Senha"
+                  value={senha2}
+                  onChange={(ev) => setSenha2(ev.target.value)}
+                  icon={null}
+                  maxLength={15}
+                ></Input>
+              </AreaComp>
+            </DivCol>
+          </DivRow>
+        </Form>
 
-          <Divider />
+        <Divider />
 
-          <AreaComp justCont="flex-end" flexDirect="row">
-            <Link href="/" passHref>
-              <Button
-                loading={loading}
-                wd="35%"
-                hg="42px"
-                bg="#000000"
-                cl="#f0ffff"
-              >
-                Cancelar
-              </Button>
-            </Link>
-
+        <AreaComp justCont="flex-end" flexDirect="row">
+          <Link href="/" passHref>
             <Button
               loading={loading}
               wd="35%"
               hg="42px"
-              bg="#f0ffff"
-              ml="12px"
-              onClick={handleSalvar}
+              bg="#000000"
+              cl="#f0ffff"
             >
-              Cadastrar
+              Cancelar
             </Button>
-            
-          </AreaComp>
-        </PageContainer>
-      </>
+          </Link>
+
+          <Button
+            loading={loading}
+            wd="35%"
+            hg="42px"
+            bg="#f0ffff"
+            ml="12px"
+            onClick={handleSalvar}
+          >
+            Cadastrar
+          </Button>
+        </AreaComp>
+      </PageContainer>
     </>
   );
 }
-

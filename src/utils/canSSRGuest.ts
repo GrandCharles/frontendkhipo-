@@ -9,7 +9,7 @@ export function canSSRGuest<P>(fn: GetServerSideProps<P>) {
         if (cookies['@nextAuth.token']) {
             return {
                 redirect: {
-                    destination: '/dash',
+                    destination: '/',
                     permanent: false,
                 }
             };

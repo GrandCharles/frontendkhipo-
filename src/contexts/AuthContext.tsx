@@ -91,7 +91,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
       toast.success("Logado com sucesso!");
 
-      Router.push("/dash");
+      Router.push("/home");
     } catch (err) {
       const response = err.response.data.error;
       toast.error(`Erro ao logar! \n ${response}`);

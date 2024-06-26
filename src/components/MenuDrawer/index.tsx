@@ -16,16 +16,16 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 
-const drawerWidth = 210; // Largura do menu expandido
-
-//=============================================================================
 import { IconBaseProps } from "react-icons";
 import Link from "next/link";
 import styles from "./styles.module.scss";
-
-//=============================================================================
 import * as Icon from "@material-ui/icons";
-//=============================================================================
+import Image from "next/image";
+import { RiShutDownLine } from "react-icons/ri";
+import logo from "../../../public/khipo.png";
+import { dataHoraZone } from "../../utils/util";
+
+const drawerWidth = 210; // Largura do menu expandido
 
 interface IListItemLinkProps {
   label: string;
@@ -35,8 +35,8 @@ interface IListItemLinkProps {
 const ListItemLink: React.FC<IListItemLinkProps> = ({ label, icon, route }) => {
   const theme = useTheme();
 
-    return (
-    <ListItemButton >
+  return (
+    <ListItemButton>
       <ListItemIcon>
         <Box
           sx={{ width: theme.spacing(6) }} // distancia do icone com o titulo
@@ -60,12 +60,7 @@ const ListItemLink: React.FC<IListItemLinkProps> = ({ label, icon, route }) => {
     </ListItemButton>
   );
 };
-//=============================================================================
 
-import Image from "next/image";
-import { RiShutDownLine } from "react-icons/ri";
-import logo from "../../../public/khipo.png";
-import {dataHoraZone} from "../../utils/util";
 
 type TitleBarProps = {
   user?: string;
@@ -73,7 +68,7 @@ type TitleBarProps = {
 };
 function TitleBar({ user, titulo }: TitleBarProps) {
   const now = dataHoraZone();
-  
+
   return (
     <>
       <div className={styles.titleBar}>
@@ -101,8 +96,7 @@ function TitleBar({ user, titulo }: TitleBarProps) {
     </>
   );
 }
-//=============================================================================
-//=============================================================================
+
 
 const openedMixin = (theme: Theme): CSSObject => ({
   width: drawerWidth,
@@ -129,8 +123,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "flex-end",
-  padding: theme.spacing(0, 1),   // Altura da area da seta de recolhimento, distancia a direita da seta de recolhimento
-  // necessary for content to be below app bar
+  padding: theme.spacing(0, 1), // Altura da area da seta de recolhimento, distancia a direita da seta de recolhimento
   ...theme.mixins.toolbar,
 }));
 
@@ -173,12 +166,10 @@ const Drawer = styled(MuiDrawer, {
   }),
 }));
 
-export default function MenuDrawer({ titulo}: TitleBarProps) {
+export default function MenuDrawer({ titulo }: TitleBarProps) {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
-
-  //const nmUser = localStorage.getItem("nomeUser");
-  const { "nomeUser": nmUser } = parseCookies()
+  const { nomeUser: nmUser } = parseCookies();
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -191,10 +182,10 @@ export default function MenuDrawer({ titulo}: TitleBarProps) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open} >
+      <AppBar position="fixed" open={open}>
         <Toolbar>
           <IconButton
-            color="inherit"              // listas do menu
+            color="inherit" // listas do menu
             aria-label="open drawer"
             onClick={handleDrawerOpen}
             edge="start"
@@ -222,7 +213,7 @@ export default function MenuDrawer({ titulo}: TitleBarProps) {
             )}
           </IconButton>
         </DrawerHeader>
-        
+
         <Divider />
 
         <List component="nav">
