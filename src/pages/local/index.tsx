@@ -391,7 +391,7 @@ export default function Local() {
       <MenuDrawer titulo="Locais" />
 
       <PageContainer
-        titulo={`Locais - ${contextoTela}`}
+        titulo={"Locais"}
         titulo2="*Campos obrigatórios"
         wd="65%"
         hg="10vh"
